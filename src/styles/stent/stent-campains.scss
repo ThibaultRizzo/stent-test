@@ -1,0 +1,326 @@
+#campaigns-result {
+  [data-item-status="active"] {
+    .badge-danger,
+    .btn-outline-success {
+      display: none;
+    }
+  }
+
+  [data-item-status="stop"],
+  [data-item-status="pause"] {
+    .badge-success,
+    .btn-outline-danger {
+      display: none;
+    }
+  }
+
+  .custom-control-input ~ .custom-control-label::before {
+    background-color: $red;
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: $green;
+  }
+
+  .custom-switch {
+    transform: scale(0.75);
+    transform-origin: left;
+    margin-right: -33px;
+  }
+  .custom-control-label {
+    font-size: 18px;
+  }
+}
+
+#campaign-form {
+
+  .nav-tabs .nav-link.active {
+    border-bottom: 5px solid $primary;
+  }
+
+  .nav-item {
+    cursor: pointer;
+
+    &#add-nudge-button {
+      span {
+        color: $primary;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid transparent;
+        border-left-width: 0;
+        border-right-width: 0;
+        border-top-width: 0;
+        display: block;
+        border: 1px solid transparent;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        font-size: 13px;
+      }
+    }
+
+    .nav-link {
+      font-size: 13px;
+      padding: 0.5rem 0;
+    }
+
+    .is-required {
+      display: none;
+    }
+
+    .remove-nudge-button {
+      vertical-align: 0;
+      font-size: 10px;
+    }
+
+    // .remove-nudge-button {
+    //   visibility: hidden;
+    // }
+  
+    // &:hover {
+    //   .remove-nudge-button {
+    //     visibility: visible;
+    //   }
+    // }
+  }
+
+  .campaign-type-wrapper {
+    input[type="radio"] {
+      display: none;
+      &:checked + label {
+        background-color: $purple;
+        color: white;
+      }
+    }
+    .campaign-type {
+      float: left;
+      width: 32%;
+      text-align: center;
+      position: relative;
+      word-wrap: break-word;
+      background-color: #ffffff;
+      background-clip: border-box;
+      border: 1px solid #f2edf9;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      cursor: pointer;
+      margin-right: 1%;
+      height: 361px;
+
+      .campaign-image {
+        height: 166px;
+        background-position: center center;
+        background-size: cover;
+        margin-bottom: 16px;
+        border-radius: 3px;
+      }
+
+      h2 {
+        font-size: 17px;
+        overflow: hidden;
+        max-height: 60px;
+        margin-bottom: 10px;
+      }
+      p {
+        margin: 0;
+        font-size: 13px;
+        line-height: 130%;
+        max-height: 80px;
+        overflow: hidden;
+        height: 80px;
+      }
+    }
+  }
+
+  .campaign-slot-cron-picker {
+    select {
+      display: inline-block;
+      width: auto;
+      height: calc(1.5em + 1rem + 2px);
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9375rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #24104f;
+      background-color: #ffffff;
+      background-clip: padding-box;
+      border: 1px solid #ddd2ec;
+      border-radius: 0.375rem;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      margin: 0 5px;
+
+      &:disabled,
+      &[readonly] {
+        opacity: 0.7 !important;
+        background-color: #fbf9fd !important;
+      }
+    }
+  }
+
+  #campaign-name + span.is-invalid .select2-selection {
+    border: 1px solid $red;
+  }
+
+  #campaign-program + span.is-invalid .select2-selection {
+    border: 1px solid $red;
+  }
+
+  #campaign-add-schedule.is-invalid {
+    border: 1px solid $red;
+  }
+
+  #campaign-messages-links .is-invalid {
+    color: $red;
+  }
+
+  .switch-language.is-invalid {
+    border: 1px solid $red;
+  }
+
+  #advanced-configuration-wrapper {
+    .toggle-advanced {
+      cursor: pointer;
+    }
+    .fe-chevron-down {
+      display: none;
+    }
+    &.open {
+      .form-group {
+        display: block;
+      }
+      .fe-chevron-down {
+        display: inline-block;
+      }
+      .fe-chevron-right {
+        display: none;
+      }
+    }
+    .form-group {
+      display: none;
+    }
+  }
+  
+}
+
+.editor-wrapper {
+  .language-switch-wrapper {
+    background: #1a0c3a;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #ffffff;
+    font-size: 13px;
+    z-index: 2;
+    position: relative;
+
+    ul {
+      margin: 0;
+      padding: 5px;
+      list-style: none;
+
+      li {
+        display: inline-block;
+        margin-right: 0.5em;
+      }
+    }
+  }
+
+  .message-editor {
+    padding: 0.75rem 0.75rem;
+    height: 350px !important;
+    position: relative;
+    top: -5px;
+  }
+
+  .editor-tokens {
+    background: #403162;
+    z-index: 1;
+    padding: 5px 5px 8px;
+    position: relative;
+
+    .label {
+      color: white;
+      font-size: 12px;
+      vertical-align: 1px;
+    }
+
+    .badge {
+      cursor: pointer;
+    }
+  }
+
+  .new-language, .new-language-nudge {
+    select {
+      height: 30px;
+      font-size: 12px;
+      vertical-align: 0px;
+    }
+  } 
+
+  .maxCharCountWrapper {
+    font-size: 14px;
+    float: right;
+    padding-top: 5px;
+    &.text-warning {
+      color: $red !important;
+    }
+  }
+}
+
+.is-required {
+  color: $red;
+  font-size: 28px;
+  line-height: 0px;
+  vertical-align: -12px;
+  margin-left: 5px;
+}
+
+.time-duration-picker-content {
+  background-color: white;
+  border-bottom-left-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+  border-right: 1px solid $gray-400;
+  border-left: 1px solid $gray-400;
+  border-bottom: 1px solid $gray-400;
+}
+
+#campaigns-filter-wrapper {
+  background-color: #ffffff;
+  padding: 10px;
+  border-top: 1px solid $gray-200;
+
+  #filter-by-title {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  .form-group {
+    margin: 0;
+  }
+
+  .filter-table {
+    max-width: 200px;
+    &.active {
+      background-color: $primary;
+      color: #ffffff;
+    }
+  }
+
+  .filter-table-select {
+    font-size: 12px;
+    height: 30px;
+    padding: 0 10px;
+  }
+
+  .filter-table-input {
+    font-size: 12px;
+    height: 30px;
+    border-radius: 4px;
+  }
+}
+
+.health-icon {
+  width: 20px;
+}
+
+.progress {
+  height: 6px;
+  width: 60px;
+}

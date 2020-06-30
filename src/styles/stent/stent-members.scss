@@ -1,0 +1,137 @@
+#members-filter-wrapper {
+  background-color: #ffffff;
+  padding: 10px;
+  border-top: 1px solid $gray-200;
+
+  #filter-by-title {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  .form-group {
+    margin: 0;
+  }
+
+  .filter-table {
+    max-width: 250px;
+    &.active {
+      background-color: $primary;
+      color: #ffffff;
+    }
+  }
+
+  .filter-table-select {
+    font-size: 12px;
+    height: 30px;
+    padding: 0 10px;
+  }
+
+  .filter-table-input {
+    font-size: 12px;
+    height: 30px;
+    border-radius: 4px;
+  }
+}
+
+#members-wrapper {
+  h2 {
+    margin: 0;
+    font-size: 1.3em;
+  }
+
+  .ssi-wrapper {
+    h3 {
+      margin: 0;
+    }
+    small {
+      position: relative; 
+      bottom: 2px;
+    }
+    .ssi-jauge-wrapper {
+      margin-left: 8px;
+      font-size: 0;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .avatar {
+    border-radius: 50px;
+  }
+  
+  .progress {
+    height: 0.7em;
+  }
+  
+  .badge {
+    font-size: 0.9em;
+  }
+
+  tr.inactive {
+    opacity: 0.3;
+  }
+
+  .custom-control-input ~ .custom-control-label::before {
+    background-color: $red;
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: $green;
+  }
+
+  .member-headline {
+    max-height: 3em;
+    overflow: hidden;
+  }
+
+  .custom-switch {
+    transform: scale(0.75);
+    transform-origin: left;
+    margin-right: -27px;
+  }
+
+  .subscription-wrapper {
+    height: 24px;
+    display: flex;
+    margin-right: 6px;
+    position: relative;
+
+    .subscription-icon {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+    }
+    
+    .subscription-status {
+      position: absolute;
+      top: -4px;
+      right: -4px ;
+      width: 13px;
+      height: 13px;
+      border-radius: 10px;
+      background-color: gray;
+      border: 2px solid $gray-100;
+
+      &.active {
+        background-color: #00d97e;
+      }
+      &.trial {
+        background-color: #2f8c89;
+      }
+      &.canceled {
+        background-color: #d81a1a;
+      }
+      &.ios_purchased {
+        background-color: #00d97e;
+      }
+      &.suspended {
+        background-color: #ff9700;
+      }
+    }
+  }
+
+}

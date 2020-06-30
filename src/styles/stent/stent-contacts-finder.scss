@@ -1,0 +1,124 @@
+#finder-form {
+  .custom-control-input:disabled ~ .custom-control-label::before {
+    background-color: $red;
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: $green;
+  }
+
+  #radios-wrapper.is-invalid {
+    border: 1px solid $red;
+  }
+
+  .select2.is-invalid .select2-selection {
+    border: 1px solid $red;
+  }
+
+  #refresh-finder {
+    cursor: pointer;
+  }
+
+  .finder-wrapper-disabled {
+    opacity: 0.3;
+
+    .is-required {
+      display: none;
+    }
+
+    * {
+      pointer-events: none;
+    }
+  }
+
+  .toggle-schedule-wrapper {
+    cursor: pointer;
+
+    span {
+      vertical-align: -2px;
+    }
+
+    .fe-chevron-down {
+      display: none;
+    }
+
+    + div {
+      display: none;
+    }
+
+    &.open {
+      .fe-chevron-down {
+        display: inline-block;
+      }
+      .fe-chevron-right {
+        display: none;
+      }
+      + div {
+        display: block;
+      }
+    }
+  }
+
+  .toggle-advanced {
+    cursor: pointer;
+
+    span {
+      vertical-align: -2px;
+    }
+
+    .fe-chevron-down {
+      display: none;
+    }
+
+    + div {
+      display: none;
+    }
+
+    &.open {
+      .fe-chevron-down {
+        display: inline-block;
+      }
+      .fe-chevron-right {
+        display: none;
+      }
+      + div {
+        display: block;
+      }
+    }
+  }
+
+  .campaign-slot-cron-picker {
+    select {
+      display: inline-block;
+      width: auto;
+      height: calc(1.5em + 1rem + 2px);
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9375rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #24104f;
+      background-color: #ffffff;
+      background-clip: padding-box;
+      border: 1px solid #ddd2ec;
+      border-radius: 0.375rem;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      margin: 0 5px;
+
+      &:disabled,
+      &[readonly] {
+        opacity: 0.7 !important;
+        background-color: #fbf9fd !important;
+      }
+    }
+  }
+}
+
+#finders-result {
+  .custom-control-input ~ .custom-control-label::before {
+    background-color: $red;
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: $green;
+  }
+}
