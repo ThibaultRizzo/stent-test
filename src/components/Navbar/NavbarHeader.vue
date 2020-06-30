@@ -28,7 +28,7 @@
           onerror="this.onerror=null;this.src='/assets/img/avatars/profiles/default-avatar.gif'"
           :alt="fullName"
         />
-        <div id="user-name">{{fullName}}</div>
+        <div id="user-name">{{ fullName }}</div>
         <a
           href="https://app.stent.io/2311456874/apps#"
           class="dropdown-toggle flex-row align-items-center"
@@ -38,12 +38,16 @@
           aria-expanded="false"
           id="arrow-sign-out"
         ></a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="sidebarIconCopy">
+        <div
+          class="dropdown-menu dropdown-menu-right"
+          aria-labelledby="sidebarIconCopy"
+        >
           <a
             href="https://app.stent.io/sign-out.html?tenantKey=2311456874"
             class="dropdown-item"
             id="sign-out-link"
-          >Sign out</a>
+            >Sign out</a
+          >
         </div>
       </div>
     </div>
@@ -60,5 +64,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

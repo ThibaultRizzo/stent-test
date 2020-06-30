@@ -17,42 +17,42 @@ export default new Router({
     {
       path: "/home",
       name: "Dashboard",
-      component: DashboardPage,
+      component: DashboardPage
     },
     {
       path: "/users",
       name: "Team",
-      component: TeamPage,
+      component: TeamPage
     },
     {
       path: "/contacts",
       name: "Audience",
-      component: AudiencePage,
+      component: AudiencePage
     },
     {
       path: "/campaigns",
       name: "Campaigns",
-      component: CampaignsPage,
+      component: CampaignsPage
     },
     {
       path: "/newsfeed",
       name: "Content",
-      component: ContentPage,
+      component: ContentPage
     },
     {
       path: "/settings",
       name: "Settings",
-      component: SettingsPage,
+      component: SettingsPage
     },
     {
       path: "/settings/apps",
       name: "App Settings",
-      component: AppSettings,
+      component: AppSettings
     },
     {
       // will match everything
       path: "*",
-      redirect: "/settings/apps",
-    },
-  ],
+      redirect: "/settings/apps"
+    }
+  ]
 });

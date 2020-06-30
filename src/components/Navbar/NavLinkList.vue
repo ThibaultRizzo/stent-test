@@ -19,13 +19,18 @@
         <div class="collapse" id="sidebarUsers">
           <ul class="nav nav-sm flex-column">
             <li class="nav-item">
-              <a href="https://app.stent.io/2311456874/members" class="nav-link ui-link">Members</a>
+              <a
+                href="https://app.stent.io/2311456874/members"
+                class="nav-link ui-link"
+                >Members</a
+              >
             </li>
             <li class="nav-item">
               <a
                 href="https://app.stent.io/2311456874/dashboard-user"
                 class="nav-link ui-link"
-              >Dashboard</a>
+                >Dashboard</a
+              >
             </li>
           </ul>
         </div>
@@ -43,19 +48,32 @@
         <div class="collapse" id="sidebarContacts">
           <ul class="nav nav-sm flex-column">
             <li class="nav-item">
-              <a href="https://app.stent.io/2311456874/finder-list" class="nav-link ui-link">Finders</a>
+              <a
+                href="https://app.stent.io/2311456874/finder-list"
+                class="nav-link ui-link"
+                >Finders</a
+              >
             </li>
             <li class="nav-item">
-              <a href="https://app.stent.io/2311456874/contacts" class="nav-link ui-link">Contacts</a>
+              <a
+                href="https://app.stent.io/2311456874/contacts"
+                class="nav-link ui-link"
+                >Contacts</a
+              >
             </li>
             <li class="nav-item">
               <a
                 href="https://app.stent.io/2311456874/segments-list"
                 class="nav-link ui-link"
-              >Segments</a>
+                >Segments</a
+              >
             </li>
             <li class="nav-item">
-              <a href="https://app.stent.io/2311456874/funnel" class="nav-link ui-link">Funnel</a>
+              <a
+                href="https://app.stent.io/2311456874/funnel"
+                class="nav-link ui-link"
+                >Funnel</a
+              >
             </li>
           </ul>
         </div>
@@ -76,13 +94,15 @@
               <a
                 href="https://app.stent.io/2311456874/campaign-list-nurture-linkedin-cohort"
                 class="nav-link ui-link"
-              >Invites</a>
+                >Invites</a
+              >
             </li>
             <li class="nav-item">
               <a
                 href="https://app.stent.io/2311456874/campaign-list-nurture-linkedin-segment"
                 class="nav-link ui-link"
-              >Nurtures</a>
+                >Nurtures</a
+              >
             </li>
           </ul>
         </div>
@@ -103,13 +123,15 @@
               <a
                 href="https://app.stent.io/2311456874/tenant-media-list"
                 class="nav-link ui-link"
-              >Media</a>
+                >Media</a
+              >
             </li>
             <li class="nav-item">
               <a
                 href="https://app.stent.io/2311456874/tenant-planification"
                 class="nav-link ui-link"
-              >Calendar</a>
+                >Calendar</a
+              >
             </li>
           </ul>
         </div>
@@ -131,7 +153,9 @@
         <div class="collapse show" id="settingsMenu">
           <ul class="nav nav-sm flex-column">
             <li class="nav-item">
-              <router-link to="/settings/apps" class="nav-link ui-link">Apps</router-link>
+              <router-link to="/settings/apps" class="nav-link ui-link"
+                >Apps</router-link
+              >
             </li>
           </ul>
         </div>
@@ -144,5 +168,4 @@
 export default {};
 </script>
 
-<style>
-</style>
+<style></style>

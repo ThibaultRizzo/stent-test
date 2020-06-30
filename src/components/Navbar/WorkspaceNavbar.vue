@@ -14,7 +14,8 @@
               title="Académie eSports Montréal"
               style="background-color: rgba(136, 123, 181, 1);"
               class="initials"
-            >AE</span>
+              >AE</span
+            >
             <span class="name">Académie eSports Montréal</span>
           </a>
           <a
@@ -24,7 +25,12 @@
             href="https://app.stent.io/2250377376/"
             class="name"
           >
-            <span title="ACME" style="background-color: rgba(130, 130, 136, 1);" class="initials">AC</span>
+            <span
+              title="ACME"
+              style="background-color: rgba(130, 130, 136, 1);"
+              class="initials"
+              >AC</span
+            >
             <span class="name">ACME</span>
           </a>
           <a
@@ -38,7 +44,8 @@
               title="wawawoom"
               style="background-color: rgba(108, 71, 112, 1);"
               class="initials"
-            >WA</span>
+              >WA</span
+            >
             <span class="name">wawawoom</span>
           </a>
         </div>
@@ -65,7 +72,11 @@
           </div>
           <span class="create-tenant-title">Create workspace</span>
         </div>
-        <a href="https://admin.stent.io/" id="go-to-admin-wrapper" style="display: flex;">
+        <a
+          href="https://admin.stent.io/"
+          id="go-to-admin-wrapper"
+          style="display: flex;"
+        >
           <div class="icon">
             <img src="@/assets/img/admin.svg" />
           </div>
@@ -80,5 +91,4 @@
 export default {};
 </script>
 
-<style>
-</style>
+<style></style>

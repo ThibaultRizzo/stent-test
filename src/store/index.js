@@ -9,20 +9,20 @@ export default new Vuex.Store({
       logo: "https://stentcdn.s3.amazonaws.com/resources/Logo-512x512.png",
       firstName: "Nicolas",
       lastName: "Payrouse",
-      avatar: "/src/assets/img/avatars/profiles/avatar-1.jpg",
-    },
+      avatar: "/src/assets/img/avatars/profiles/avatar-1.jpg"
+    }
   },
   getters: {
-    fullName: (state) => {
+    fullName: state => {
       const { firstName, lastName } = state.currentUser;
       return `${firstName} ${lastName}`;
     },
-    url: (state) => {
+    url: state => {
       // const url = require(state.currentUser.avatar);
       return state.currentUser.avatar;
-    },
+    }
   },
   mutations: {},
   actions: {},
-  modules: {},
+  modules: {}
 });

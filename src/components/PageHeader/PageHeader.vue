@@ -4,8 +4,8 @@
       <div class="header-body">
         <div class="row align-items-end">
           <div class="col">
-            <h6 class="header-pretitle">{{pretitle}}</h6>
-            <h1 class="header-title">{{title}}</h1>
+            <h6 class="header-pretitle">{{ pretitle }}</h6>
+            <h1 class="header-title">{{ title }}</h1>
           </div>
         </div>
       </div>
@@ -27,5 +27,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

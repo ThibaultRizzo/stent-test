@@ -1,5 +1,8 @@
 <template>
-  <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-dark" id="sidebar">
+  <nav
+    class="navbar navbar-vertical fixed-left navbar-expand-md navbar-dark"
+    id="sidebar"
+  >
     <div class="container-fluid">
       <NavbarHeader />
       <NavLinkList />
@@ -19,5 +22,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>
