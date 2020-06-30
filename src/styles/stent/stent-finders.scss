@@ -1,0 +1,118 @@
+.mapping-button {
+  width: 38px;
+  height: 38px;
+  margin: 0 auto;
+  font-size: 26px;
+  color: white;
+  background-color: $primary;
+  border-radius: 38px;
+}
+
+.finder-mapping-disabled {
+  select {
+    opacity: 0.5;
+  }
+  .mapping-button {
+    opacity: 0.2;
+  }
+}
+
+.finder-file-image {
+  width: 40px;
+  height: 40px;
+}
+
+.finder-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+  border: 2px solid $gray-100;
+  background-color: $gray-100;
+}
+
+#finder-mapping-wrapper .card.is-invalid {
+  border-color: $red;
+  margin-bottom: 0.5rem;
+}
+
+#finder-file-wrapper .card.is-invalid {
+  border-color: $red;
+  margin-bottom: 0.5rem;
+}
+
+#finders-filter-wrapper {
+  background-color: #ffffff;
+  padding: 10px;
+  border-top: 1px solid $gray-200;
+
+  #filter-by-title {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  .form-group {
+    margin: 0;
+  }
+
+  .filter-table {
+    max-width: 250px;
+    &.active {
+      background-color: $primary;
+      color: #ffffff;
+    }
+  }
+
+  .filter-table-select {
+    font-size: 12px;
+    height: 30px;
+    padding: 0 10px;
+  }
+
+  .filter-table-input {
+    font-size: 12px;
+    height: 30px;
+    border-radius: 4px;
+  }
+}
+
+#finder-arrow-separator {
+  padding-top: 1.7em;
+  font-size: 2em;
+  opacity: 0.6;
+}
+
+.moreAvatar {
+  background-color: $gray-600;
+  color: $white;
+  padding: 0.15em 0.55em 0.15em 0.4em;
+  border-radius: 3em;
+  border: 2px solid white;
+  margin-left: -8px;
+  font-size: 0.7em;
+  line-height: 18px;
+  position: relative;
+  top: 1px;
+}
+
+#finder-form {
+  .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    overflow: hidden;
+    .avatar-xs {
+      top: 1px;
+    }
+  }
+}
+
+#finders-result {
+  .custom-switch {
+    transform: scale(0.75);
+    transform-origin: left;
+  }
+  .custom-control-label {
+    font-size: 18px;
+  }
+}
+
+#filter-on-company-wrapper {
+  display: none;
+}
