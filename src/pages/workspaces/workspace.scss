@@ -1,0 +1,64 @@
+.star-icon {
+  padding: 4px;
+  border-radius: 50%;
+}
+.ws-logo {
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 8px;
+  margin: 0 10px;
+  &--l {
+    @extend .ws-logo;
+    width: 64px;
+    height: 64px;
+    margin: 0;
+  }
+}
+
+.avatar {
+  margin-right: -10%;
+  border: 3px solid;
+}
+
+#workspace-table,
+#workspace-form {
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #00d97e;
+  }
+  .custom-control-input ~ .custom-control-label::before {
+    background-color: #e63757;
+  }
+}
+
+.required {
+  &::after {
+    content: "*";
+    color: red;
+  }
+}
+.form-control {
+  padding-left: 24px;
+}
+
+#workspace-form {
+  button[type="submit"] {
+    margin: 20px 0;
+  }
+  .custom-control {
+    width: 100%;
+    margin-left: 48px;
+    padding-left: 24px;
+  }
+
+  .error {
+    color: red;
+    padding-left: 24px;
+    font-size: 80%;
+  }
+}
+
+.collapse-title {
+  margin-top: 20px;
+}

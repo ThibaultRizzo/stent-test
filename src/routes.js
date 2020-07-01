@@ -7,6 +7,9 @@ import CampaignsPage from "@/pages/campaigns/CampaignsPage";
 import ContentPage from "@/pages/content/ContentPage";
 import SettingsPage from "@/pages/settings/SettingsPage";
 import AppSettings from "@/pages/settings/AppSettings";
+import WorkspaceListPage from "@/pages/workspaces/WorkspaceListPage";
+import WorkspacePage from "@/pages/workspaces/WorkspacePage";
+import AddWorkspacePage from "@/pages/workspaces/AddWorkspacePage";
 
 Vue.use(Router);
 
@@ -50,9 +53,24 @@ export default new Router({
       component: AppSettings
     },
     {
-      // will match everything
-      path: "*",
-      redirect: "/settings/apps"
+      path: "/workspaces",
+      name: "Workspaces",
+      component: WorkspaceListPage
+    },
+    {
+      path: "/workspaces/:id",
+      name: "Workspace",
+      component: WorkspacePage
+    },
+    {
+      path: "/workspaces/new",
+      name: "Add Workspace",
+      component: AddWorkspacePage
     }
+    // {
+    //   // will match everything
+    //   path: "*",
+    //   redirect: "/settings/apps",
+    // },
   ]
 });
