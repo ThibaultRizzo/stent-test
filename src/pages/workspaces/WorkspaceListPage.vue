@@ -2,12 +2,17 @@
   <div class="container-fluid" id="crm-list">
     <div class="row">
       <PageHeader title="All" pretitle="workspaces">
-        <router-link to="workspaces/new" tag="button" class="btn btn-primary">New workspace</router-link>
+        <router-link to="workspaces/new" tag="button" class="btn btn-primary"
+          >New workspace</router-link
+        >
       </PageHeader>
     </div>
     <div class="row">
       <div class="col">
-        <table id="workspace-table" class="table table-sm table-sm table-nowrap">
+        <table
+          id="workspace-table"
+          class="table table-sm table-sm table-nowrap"
+        >
           <thead>
             <tr>
               <th scope="col">Name</th>
@@ -60,7 +65,8 @@
                   <label
                     class="custom-control-label font-weight-bold text-capitalize"
                     :for="`status-${i}`"
-                  >{{ ws.status }}</label>
+                    >{{ ws.status }}</label
+                  >
                 </div>
               </td>
               <td>
@@ -68,7 +74,8 @@
                   :to="{ name: 'Workspace', params: { id: ws.id } }"
                   tag="button"
                   class="btn btn-outline-primary"
-                >Edit</router-link>
+                  >Edit</router-link
+                >
               </td>
             </tr>
           </tbody>

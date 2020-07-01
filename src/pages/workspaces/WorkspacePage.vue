@@ -11,7 +11,9 @@
     <div class="col">
       <form id="workspace-form" @submit.prevent="checkForm" novalidate>
         <div class="row">
-          <label for="name" class="col col-form-label font-weight-bold required">Name</label>
+          <label for="name" class="col col-form-label font-weight-bold required"
+            >Name</label
+          >
           <input
             id="name"
             type="text"
@@ -20,7 +22,10 @@
             required
             v-model="form.name"
           />
-          <span v-if="!isNameValid()" class="star-icon fe fe-x bg-danger text-white"></span>
+          <span
+            v-if="!isNameValid()"
+            class="star-icon fe fe-x bg-danger text-white"
+          ></span>
           <span
             v-else-if="isNameValid() && hasSubmittedForm"
             class="star-icon fe fe-check bg-success text-white"
@@ -33,7 +38,9 @@
           <h2>Advanced</h2>
         </div>
         <div class="row">
-          <label for="host" class="col col-form-label font-weight-bold required">Host</label>
+          <label for="host" class="col col-form-label font-weight-bold required"
+            >Host</label
+          >
           <input
             id="host"
             type="text"
@@ -42,7 +49,10 @@
             required
             v-model="form.url"
           />
-          <span v-if="!isURLValid()" class="star-icon fe fe-x bg-danger text-white"></span>
+          <span
+            v-if="!isURLValid()"
+            class="star-icon fe fe-x bg-danger text-white"
+          ></span>
           <span
             v-else-if="isURLValid() && hasSubmittedForm"
             class="star-icon fe fe-check bg-success text-white"
@@ -51,11 +61,25 @@
           <div v-if="errors.url" class="error">{{ errors.url }}</div>
         </div>
         <div class="row">
-          <label for="timezone" class="col col-form-label font-weight-bold required">Timezone</label>
-          <select id="timezone" class="custom-select" data-toggle="select" v-model="form.timezone">
-            <option v-for="(tz, i) in timezones" :key="i" :value="tz.name">{{ tz.name }}</option>
+          <label
+            for="timezone"
+            class="col col-form-label font-weight-bold required"
+            >Timezone</label
+          >
+          <select
+            id="timezone"
+            class="custom-select"
+            data-toggle="select"
+            v-model="form.timezone"
+          >
+            <option v-for="(tz, i) in timezones" :key="i" :value="tz.name">{{
+              tz.name
+            }}</option>
           </select>
-          <span v-if="!isTimezoneValid()" class="star-icon fe fe-x bg-danger text-white"></span>
+          <span
+            v-if="!isTimezoneValid()"
+            class="star-icon fe fe-x bg-danger text-white"
+          ></span>
           <span
             v-else-if="isTimezoneValid() && hasSubmittedForm"
             class="star-icon fe fe-check bg-success text-white"
@@ -63,7 +87,11 @@
           <div v-if="errors.timezone" class="error">{{ errors.timezone }}</div>
         </div>
         <div class="row">
-          <label for="status" class="col col-form-label font-weight-bold required">Status</label>
+          <label
+            for="status"
+            class="col col-form-label font-weight-bold required"
+            >Status</label
+          >
           <div class="custom-control custom-switch">
             <input
               type="checkbox"
@@ -76,11 +104,15 @@
             <label
               class="custom-control-label font-weight-bold text-capitalize"
               for="status"
-            >{{ form.status }}</label>
+              >{{ form.status }}</label
+            >
 
             <div v-if="errors.status" class="error">{{ errors.status }}</div>
           </div>
-          <span v-if="!isStatusValid()" class="star-icon fe fe-x bg-danger text-white"></span>
+          <span
+            v-if="!isStatusValid()"
+            class="star-icon fe fe-x bg-danger text-white"
+          ></span>
           <span
             v-else-if="isStatusValid() && hasSubmittedForm"
             class="star-icon fe fe-check bg-success text-white"
@@ -88,11 +120,12 @@
         </div>
         <div class="col">
           <div class="row justify-content-center">
-            <button type="submit" class="btn btn-primary">Save modifications</button>
+            <button type="submit" class="btn btn-primary">
+              Save modifications
+            </button>
           </div>
         </div>
       </form>
-      <pre>{{ JSON.stringify({ ...errors, hasSubmittedForm }) }}</pre>
     </div>
   </div>
 </template>
