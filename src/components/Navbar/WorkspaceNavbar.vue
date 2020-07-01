@@ -72,8 +72,8 @@
           </div>
           <span class="create-tenant-title">Create workspace</span>
         </div>
-        <a
-          href="https://admin.stent.io/"
+        <router-link
+          to="/workspaces"
           id="go-to-admin-wrapper"
           style="display: flex;"
         >
@@ -81,7 +81,7 @@
             <img src="@/assets/img/admin.svg" />
           </div>
           <span class="goto-admin-title">Administration</span>
-        </a>
+        </router-link>
       </div>
     </div>
   </div>

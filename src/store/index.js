@@ -1,9 +1,14 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import workspace from "./modules/workspace";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
+  strict: true,
+  modules: {
+    workspace
+  },
   state: {
     currentUser: {
       logo: "https://stentcdn.s3.amazonaws.com/resources/Logo-512x512.png",
@@ -23,6 +28,5 @@ export default new Vuex.Store({
     }
   },
   mutations: {},
-  actions: {},
-  modules: {}
+  actions: {}
 });

@@ -25,7 +25,7 @@
           src="@/assets/img/avatars/profiles/avatar-1.jpg"
           class="avatar dropdown-toggle"
           data-toggle="dropdown"
-          onerror="this.onerror=null;this.src='/assets/img/avatars/profiles/default-avatar.gif'"
+          onerror="this.onerror=null;this.src='@/assets/img/avatars/profiles/default-avatar.gif'"
           :alt="fullName"
         />
         <div id="user-name">{{ fullName }}</div>

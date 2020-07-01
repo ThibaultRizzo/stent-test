@@ -1,11 +1,11 @@
 <template>
   <div class="container-fluid" id="crm-list">
     <div class="row">
-      <PageHeader title="Apps" pretitle="settings" />
+      <PageHeader title="New Workspace" pretitle="workspaces" />
     </div>
     <div class="row">
       <div class="col">
-        <p>Connect your Apps to stent and export leads to your CRM.</p>
+        <p>New workspace form</p>
         <div class="row"></div>
       </div>
     </div>
