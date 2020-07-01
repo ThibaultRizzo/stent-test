@@ -23,7 +23,7 @@
               <td class="col">
                 <span
                   :class="[isValid(ws) ? 'bg-primary' : 'bg-light']"
-                  class="icon fe fe-star text-white"
+                  class="star-icon fe fe-star text-white"
                 ></span>
                 <img
                   class="ws-logo"

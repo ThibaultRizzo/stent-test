@@ -20,10 +20,10 @@
             required
             v-model="form.name"
           />
-          <span v-if="!isNameValid()" class="icon fe fe-x bg-danger text-white"></span>
+          <span v-if="!isNameValid()" class="star-icon fe fe-x bg-danger text-white"></span>
           <span
             v-else-if="isNameValid() && hasSubmittedForm"
-            class="icon fe fe-check bg-success text-white"
+            class="star-icon fe fe-check bg-success text-white"
           ></span>
 
           <div v-if="errors.name" class="error">{{ errors.name }}</div>
@@ -42,10 +42,10 @@
             required
             v-model="form.url"
           />
-          <span v-if="!isURLValid()" class="icon fe fe-x bg-danger text-white"></span>
+          <span v-if="!isURLValid()" class="star-icon fe fe-x bg-danger text-white"></span>
           <span
             v-else-if="isURLValid() && hasSubmittedForm"
-            class="icon fe fe-check bg-success text-white"
+            class="star-icon fe fe-check bg-success text-white"
           ></span>
 
           <div v-if="errors.url" class="error">{{ errors.url }}</div>
@@ -55,10 +55,10 @@
           <select id="timezone" class="custom-select" data-toggle="select" v-model="form.timezone">
             <option v-for="(tz, i) in timezones" :key="i" :value="tz.name">{{ tz.name }}</option>
           </select>
-          <span v-if="!isTimezoneValid()" class="icon fe fe-x bg-danger text-white"></span>
+          <span v-if="!isTimezoneValid()" class="star-icon fe fe-x bg-danger text-white"></span>
           <span
             v-else-if="isTimezoneValid() && hasSubmittedForm"
-            class="icon fe fe-check bg-success text-white"
+            class="star-icon fe fe-check bg-success text-white"
           ></span>
           <div v-if="errors.timezone" class="error">{{ errors.timezone }}</div>
         </div>
@@ -80,10 +80,10 @@
 
             <div v-if="errors.status" class="error">{{ errors.status }}</div>
           </div>
-          <span v-if="!isStatusValid()" class="icon fe fe-x bg-danger text-white"></span>
+          <span v-if="!isStatusValid()" class="star-icon fe fe-x bg-danger text-white"></span>
           <span
             v-else-if="isStatusValid() && hasSubmittedForm"
-            class="icon fe fe-check bg-success text-white"
+            class="star-icon fe fe-check bg-success text-white"
           ></span>
         </div>
         <div class="col">
